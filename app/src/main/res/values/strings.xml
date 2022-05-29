@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">TaU</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_n">INFORMATION</string>
+    <string name="message_hint">Напишите сообщение ...</string>
+    <string name="Andministration">Администрация</string>
+    <string name="Caterory">Категории</string>
+    <string name="faculty"><![CDATA[-> О факультете]]></string>
+    <string name="Subdivisions"><![CDATA[-> Подразделения]]></string>
+    <string name="references"><![CDATA[-> Стипендия, справки]]></string>
+    <string name="rulesUniversity"><![CDATA[-> Правила университета]]></string>
+    <string name="uHealth"><![CDATA[-> Оздоровление]]></string>
+    <string name="feedback"><![CDATA[-> Обратная связь]]></string>
+    <string name="settings"><![CDATA[-> Настройки]]></string>
+    <string name="links">ссылки:</string>
+    <string name="website">- сайт ФМиИТ</string>
+    <string name="groupVK">- группа ВКонтакте</string>
 </resources>
