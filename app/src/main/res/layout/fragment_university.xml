@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/faculty"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="О факультете"
+        android:background="@color/light_grey"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-> История"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faculty"/>
+    <TextView
+        android:id="@+id/leadership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-> Руководство"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/history"/>
+    <TextView
+        android:id="@+id/departments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-> Кафедры"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/leadership"/>
+    <TextView
+        android:id="@+id/lecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-> Преподаватели"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/departments"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

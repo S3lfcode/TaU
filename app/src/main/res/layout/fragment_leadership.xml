@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+    <TextView
+        android:id="@+id/inf_leadership"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/light_grey"
+        android:text="@string/Andministration"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inf_leadership"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/jalnin"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/fio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Жалнин Руслан Викторович"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/image1"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Декан"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/fio"
+                app:layout_constraintStart_toEndOf="@id/image1"/>
+
+            <TextView
+                android:id="@+id/info_leader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кандидат физико-математических наук\nДоцент
+\n+7 (8342) 27-06-79, внутр. 1850
+\nzhrv@mrsu.ru"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                app:layout_constraintTop_toBottomOf="@id/position"
+                app:layout_constraintStart_toEndOf="@id/image1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cd1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/grishanov"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/fio2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Гришанов Евгений Николаевич"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/image2"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/position2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зам. декана по информатизации"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/fio2"
+                app:layout_constraintStart_toEndOf="@id/image2"/>
+
+            <TextView
+                android:id="@+id/info_leader2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кандидат физико-математических наук
+\nДоцент
+\n+7 (8342) 27-02-42, внутр. 1861
+\ngrishanoven@math.mrsu.ru
+"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                app:layout_constraintTop_toBottomOf="@id/position2"
+                app:layout_constraintStart_toEndOf="@id/image2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cd2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/egorova"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/fio3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Егорова Дарья Константиновна"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/image3"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/position3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зам. декана по внеучебной работе"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/fio3"
+                app:layout_constraintStart_toEndOf="@id/image3"/>
+
+            <TextView
+                android:id="@+id/info_leader3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кандидат физико-математических наук
+\nДоцент
+"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                app:layout_constraintTop_toBottomOf="@id/position3"
+                app:layout_constraintStart_toEndOf="@id/image3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cd3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/smolyanov"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/fio4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Смольянов Андрей Григорьевич"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/image4"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/position4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зам. декана по научной работе"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/fio4"
+                app:layout_constraintStart_toEndOf="@id/image4"/>
+
+            <TextView
+                android:id="@+id/info_leader4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кандидат физико-математических наук
+\nДоцент"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                app:layout_constraintTop_toBottomOf="@id/position4"
+                app:layout_constraintStart_toEndOf="@id/image4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
