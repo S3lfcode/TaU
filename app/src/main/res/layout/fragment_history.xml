@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+    <TextView
+        android:id="@+id/inf_history"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="История"
+        android:gravity="center"
+        android:background="@color/light_grey"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/history_image"
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:src="@drawable/history_image"
+        android:scaleType="fitStart"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/inf_history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/descCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Математический факультет был образован в 1970 г. в результате разделения физико-математического факультета. В 2012 г. он был переименован в факультет математики и информационных технологий. Сегодня в состав факультета входят 5 кафедр: алгебры и геометрии; математического анализа; прикладной математики, дифференциальных уравнений и теоретической механики; систем автоматизированного проектирования; фундаментальной информатики. На этих кафедрах работают 56 преподавателей; большинство из них имеет степень кандидата или доктора наук и звание доцента или профессора.
+На направлениях подготовки бакалавриата и магистратуры «Математика и компьютерные науки», «Фундаментальная информатика и информационные технологии», «Прикладная математика и информатика», «Программная инженерия» обучается 440 студентов. Кроме того, на факультете имеется аспирантура.
+\nНа базе факультета функционируют Средневолжское математическое общество, а также Школа математики и программирования, где обучаются школьники г. Саранска. При каждой кафедре имеется научно-исследовательская лаборатория.
+Деканом факультета является кандидат физико-математических наук, доцент Руслан Викторович Жалнин."
+        android:gravity="fill_vertical"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/history_image"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
