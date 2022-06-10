@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.s3lfcode.tau.databinding.ActivityMainBinding
+import com.s3lfcode.tau.presentation.fragments.SplashFragment
 
 
 class MainActivity : FragmentActivity() {

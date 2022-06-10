@@ -61,7 +61,7 @@
         android:id="@+id/recovery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/uHealth"
+        android:text="-> Администрация"
         android:textSize="25sp"
         android:textColor="@color/white"
         android:layout_margin="25dp"

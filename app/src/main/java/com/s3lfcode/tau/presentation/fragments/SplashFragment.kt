@@ -1,8 +1,10 @@
-package com.s3lfcode.tau
+package com.s3lfcode.tau.presentation.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.s3lfcode.tau.MainActivity
+import com.s3lfcode.tau.R
 import com.s3lfcode.tau.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
