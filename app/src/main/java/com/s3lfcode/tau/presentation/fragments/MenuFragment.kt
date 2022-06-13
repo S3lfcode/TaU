@@ -19,6 +19,9 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
         binding.infUniversity.setOnClickListener{
             (activity as MainActivity).navigateToFragment(UniversityFragment.newInstance())
         }
+        binding.notes.setOnClickListener{
+            (activity as MainActivity).navigateToFragment(NotesFragment.newInstance())
+        }
         binding.linksSite.setOnClickListener{
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://mrsu.ru/ru/university/faculty/fmiit/"))
             startActivity(browserIntent)

@@ -16,6 +16,9 @@ import com.s3lfcode.tau.presentation.utils.Constants.OPEN_GOOGLE
 import com.s3lfcode.tau.presentation.utils.Constants.OPEN_SEARCH
 import com.s3lfcode.tau.presentation.utils.Constants.RECEIVE_ID
 import com.s3lfcode.tau.presentation.utils.Constants.SEND_ID
+import com.s3lfcode.tau.presentation.utils.Constants.bookkeeping
+import com.s3lfcode.tau.presentation.utils.Constants.canteen
+import com.s3lfcode.tau.presentation.utils.Constants.pool
 import com.s3lfcode.tau.presentation.utils.Time
 import kotlinx.android.synthetic.main.fragment_chatwithbot.*
 import kotlinx.coroutines.*
@@ -37,7 +40,7 @@ class ChatWithBotFragment : Fragment(R.layout.fragment_chatwithbot) {
         }
         recyclerView()
         clickEvents()
-        customBotMessage("Привет! Меня зовут TaU. Что хотелось бы узнать?")
+        customBotMessage("Привет! Меня зовут TaU. Что хотелось бы узнать? Пиши '!' перед сообщением, если тебе нужна информация.")
     }
 
     private fun clickEvents() {
@@ -122,11 +125,31 @@ class ChatWithBotFragment : Fragment(R.layout.fragment_chatwithbot) {
                         startActivity(site)
                     }
                     OPEN_SEARCH -> {
+                        val msg = message.lowercase()
                         val site = Intent(Intent.ACTION_VIEW)
-                        val searchTerm: String? = message.substringAfterLast("search")
-                        site.data = Uri.parse("https://www.google.com/search?&q=$searchTerm")
+                        val arr = msg.split(" ")
+                        val key = arr[0]
+                            val searchTerm: String? = msg.substringAfterLast(key)
+                            site.data = Uri.parse("https://www.google.com/search?&q=$searchTerm")
+                            startActivity(site)
+                    }
+
+                    canteen -> {
+                        val site = Intent(Intent.ACTION_VIEW)
+                        site.data = Uri.parse("https://i.onthe.io/smngoz7d6od1i6bkv.9e52cb90.jpg")
                         startActivity(site)
                     }
+                    pool -> {
+                        val site = Intent(Intent.ACTION_VIEW)
+                        site.data = Uri.parse("https://i.onthe.io/smngoz4urqrtamdqt.53c93ec3.jpg")
+                        startActivity(site)
+                    }
+                    bookkeeping -> {
+                        val site = Intent(Intent.ACTION_VIEW)
+                        site.data = Uri.parse("https://i.onthe.io/smngoz3fbdbu2tk73g.09604805.jpg")
+                        startActivity(site)
+                    }
+
                 }
             }
         }
