@@ -15,7 +15,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentSplashBinding.bind(view)
         binding.startButton.setOnClickListener{
-            (activity as MainActivity).navigateToFragment(ChatBotFragment.newInstance())
+            (activity as MainActivity).navigateToFragment(ChatWithBotFragment.newInstance())
         }
     }
 }

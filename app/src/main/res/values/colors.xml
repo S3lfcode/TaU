@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="background">#20242d</color>
+    <color name="backgroundlight">#D8363637</color>
     <color name="user">#f4f4f4</color>
     <color name="bot">#43ADFF</color>
     <color name="grey">#9CA0A8</color>

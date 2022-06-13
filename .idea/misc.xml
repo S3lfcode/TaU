@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/bot_message.xml" value="0.202" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/ic_send.xml" value="0.202" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/receive_round_box.xml" value="0.202" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/round_button.xml" value="0.202" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/send_message.xml" value="0.202" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/send_round_box.xml" value="0.202" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/drawable/user_message.xml" value="0.202" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/activity_main.xml" value="0.10810810810810811" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_chatbot.xml" value="0.27447916666666666" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_chatwithbot.xml" value="0.205859375" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_departments.xml" value="0.27447916666666666" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_history.xml" value="0.27447916666666666" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_leadership.xml" value="0.27447916666666666" />
@@ -12,6 +20,7 @@
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_menu.xml" value="0.20915032679738563" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_splash.xml" value="0.27395833333333336" />
         <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/fragment_university.xml" value="0.22685185185185186" />
+        <entry key="..\:/WORKSPACE/ADevLabs/TaU/app/src/main/res/layout/message_item.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>
