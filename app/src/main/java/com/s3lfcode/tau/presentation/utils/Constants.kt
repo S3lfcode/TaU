@@ -7,4 +7,9 @@ object Constants {
 
     const val OPEN_GOOGLE = "Открываю Google..."
     const val OPEN_SEARCH = "Сейчас найду..."
+
+    //Фото и картинки
+    const val bookkeeping = "Секундочку..."
+    const val canteen = "Уже ищу..."
+    const val pool = "Нашёл..."
 }

@@ -21,6 +21,6 @@
     <string name="feedback"><![CDATA[-> Обратная связь]]></string>
     <string name="settings"><![CDATA[-> Настройки]]></string>
     <string name="links">ссылки:</string>
-    <string name="website">- сайт ФМиИТ</string>
-    <string name="groupVK">- группа ВКонтакте</string>
+    <string name="website">сайт ФМиИТ</string>
+    <string name="groupVK">группа ВКонтакте</string>
 </resources>

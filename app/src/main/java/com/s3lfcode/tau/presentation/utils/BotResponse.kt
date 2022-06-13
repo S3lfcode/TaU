@@ -3,6 +3,9 @@ package com.s3lfcode.tau.presentation.utils
 import android.annotation.SuppressLint
 import com.s3lfcode.tau.presentation.utils.Constants.OPEN_GOOGLE
 import com.s3lfcode.tau.presentation.utils.Constants.OPEN_SEARCH
+import com.s3lfcode.tau.presentation.utils.Constants.bookkeeping
+import com.s3lfcode.tau.presentation.utils.Constants.canteen
+import com.s3lfcode.tau.presentation.utils.Constants.pool
 import java.sql.Date
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
@@ -81,33 +84,57 @@ object BotResponse {
 
             //Команды для информации по университету
             m.contains("!") && m.contains("буфет") -> {
-                "Буфет МГУ Огарёва.\n-> Место: главный корпус 1,2 и 9 этаж.\n-> Время работы: ПН-ПТ 9.00-17.00\nСБ-ВС выходной"
+                "Буфеты ФМиИТ.\n-> Место: 1,2 и 9 этажи\n-> Время работы: Пн-Пт 9.00-17.00\nВыходной: Сб-Вс"
             }
-            m.contains("а я думаю, что сила в анжуманиях") -> {
-                "...\n Да, а ещё бегат и прес качат балят"
+            m.contains("!") && m.contains("деканат") -> {
+                "Деканат ФМиИТ. Место: "
             }
-            m.contains("а я думаю, что сила в анжуманиях") -> {
-                "...\n Да, а ещё бегат и прес качат балят"
+            m.contains("!") && m.contains("бухгалтер") -> {
+                "Бухгалтерия МГУ.\n-> Адрес: ул.Демократическая, 69\n" +
+                        "-> Место: за главным корпусом\n" +
+                        "-> Время работы: Пн-Сб 9.00-18.00\nПерерыв: 13.00-14.00\nВыходной: Вс\n" +
+                        "Телефоны:\n- расчёты стипендии: 29-06-87\n" +
+                        "- банковские операции: 29-06-88"
             }
-            m.contains("а я думаю, что сила в анжуманиях") -> {
-                "...\n Да, а ещё бегат и прес качат балят"
+            m.contains("!") && (m.contains("интернет центр") || m.contains("печат")) -> {
+                "Пока не знаю..."
             }
-            m.contains("а я думаю, что сила в анжуманиях") -> {
-                "...\n Да, а ещё бегат и прес качат балят"
+            m.contains("!") && m.contains("бассейн") -> {
+                "Бассейн - Студенческий.\n-> Адрес: ул.Пролетарская, 61а\n" +
+                        "-> Место: за главным корпусом\n-> Время работы: Пн-Вс 6.30-21.30\n-> Телефон: 24-28-32"
             }
-            m.contains("а я думаю, что сила в анжуманиях") -> {
-                "...\n Да, а ещё бегат и прес качат балят"
+            m.contains("!") && m.contains("библиотек") -> {
+                "Научная библиотека МГУ.\n-> Место: Корпус АБК\n-> Время работы: Пн-Сб 9.00-18.00\nВыходной: Вс"
+            }
+            m.contains("!") && (m.contains("столов") || m.contains("молодёжн")) -> {
+                "Студенческий комбинат питания - Молодёжный.\n-> Адрес: ул.Большевистская, 68в\n-> Место: за главным корпусом\n-> Время работы: Пн-Пт 9.00-17.00\nВыходной: Сб-Вс"
             }
 
-            //Open Google
-            m.contains("открой гугл") || m.contains("open google") || m.contains("открой google")-> {
+
+            //Открыть гугл
+            m.contains("открой гугл") || m.contains("открой браузер") || m.contains("открой google")-> {
                 OPEN_GOOGLE
             }
 
-            //Search on the internet
-            message.contains("найти")-> {
+            //Поиск в браузере
+            m.contains("найди") || m.contains("поиск") || m.contains("найти")
+                    || m.contains("загугли")|| m.contains("искать") || m.contains("поиск") -> {
                 OPEN_SEARCH
             }
+
+            //фото столовой
+            (m.contains("фото") || m.contains("картинка") || m.contains("покажи")) && (m.contains("столов") || m.contains("молодёжн")) -> {
+                canteen
+            }
+            //фото студенческого бассейна
+            (m.contains("фото") || m.contains("картинка") || m.contains("покажи")) && m.contains("бассейн") -> {
+                pool
+            }
+            //фото бухгалтерия
+            (m.contains("фото") || m.contains("картинка") || m.contains("покажи")) && m.contains("бухгалтер") -> {
+                bookkeeping
+            }
+
 
             //Ответ
             m.contains("окей") || m.contains("конечно") || m.contains("понятно") -> {
